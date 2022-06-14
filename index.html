@@ -18,7 +18,7 @@
   </head>
 
 <!-- 
-  TODO - add form
+  DONE - add form
   DONE - fix nav bar spacing for mobile
   DONE - add anchor links to nav bar
   DONE - make images responsive
@@ -43,6 +43,65 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <form>
+
+          <div class="group">
+            <label class="item" for="location">Location</label>
+            <input 
+              class="item"
+              id="location"
+              type="text"
+              name="location"
+              autofocus="on"
+              placeholder="Search destination"
+              required
+            />
+          </div>
+
+          <div class="group">
+            <label class="item" for="arrival-date">Arrive</label>
+            <input 
+              class="item"
+              id="arrival-date"
+              type="date"
+              name="arrival-date"
+              autofocus="on"
+              required
+            />
+          </div>
+
+          <div class="group">
+            <label class="item" for="depart-date">Depart</label>
+            <input 
+              class="item"
+              id="depart-date"
+              type="date"
+              name="depart-date"
+              autofocus="on"
+              required
+            />
+          </div>
+
+          <div class="group">
+            <label class="item" for="building-type">Type</label>
+            <select 
+              class="item"
+              id="building-type"
+              name="building-type"
+              size="1"
+            >
+              <option value="apartment">Apartment</option>
+              <option value="barn">Barn</option>
+              <option value="castle">Castle</option>
+              <option value="houseboat">Houseboat</option>
+              <option value="tiny-house">Tiny House</option>
+              <option value="yacht">Yacht</option>
+              <option value="yurt">Yurt</option>
+            </select>
+          </div>
+
+          <button type="submit">Search</button>
+        </form>
       </section>
 
       <!-- About -->

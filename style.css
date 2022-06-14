@@ -39,9 +39,7 @@ main img {
 
 .group {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .item {
@@ -51,6 +49,18 @@ main img {
 
 .item-double {
   flex: 2;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  flex: 1;
+  margin: 10px;
 }
 
 /* -------  Navigation ------- */
@@ -63,7 +73,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 68px;
   color: #fff;
 }
 
@@ -130,4 +140,49 @@ footer p {
   padding: 20px;
 }
 
-/* -------  Media Query ------- */
+/* 
+DONE - space apart logo and menu links in nav bar
+DONE - items in About horizontally aligned
+DONE - vertically center About paragraph
+DONE - ideas images in 2x2 grid
+DONE - Want to Host horizontally aligned
+  DONE - paragraph is vertically centered
+  DONE - paragraph and img share same width
+
+ */
+
+/* -------  Media Queries ------- */
+
+/* For screens between 480-800px */
+@media all and (min-width: 480px){
+  
+  
+  .item {
+    align-self:center;
+  }
+  
+  .form-group {
+    display: block;
+  }
+  
+  .item-double{
+    align-self:center;
+    padding-left: 10px;
+  }
+}
+
+/* For screens greater than 800px */
+@media all and (min-width: 800px){
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  form input {
+    width: 100%;
+  }
+}

@@ -73,7 +73,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 68px;
+  font-size: 18vw;
   color: #fff;
 }
 
@@ -89,6 +89,7 @@ header nav ul {
 
 header nav ul li {
   list-style-type: none;
+  font-size: 5vw;
 }
 
 header nav ul li a {
@@ -153,27 +154,44 @@ DONE - Want to Host horizontally aligned
 
 /* -------  Media Queries ------- */
 
-/* For screens between 480-800px */
+/* For screens between 480-880px */
 @media all and (min-width: 480px) {
+  
   .item {
     align-self: center;
   }
-
-  .form-group {
-    display: block;
-  }
-
+  
   .item-double {
     align-self: center;
     padding-left: 10px;
   }
+  
+  .logo {
+    font-size: 68px;
+  }
+  
+  header nav ul li {
+    font-size: 16px;
+  }
+  
+  form button {
+    width: 60%;
+  }
 }
 
 /* For screens greater than 800px */
-@media all and (min-width: 800px) {
+@media all and (min-width: 880px) {
   header {
     display: flex;
     justify-content: space-between;
+  }
+  
+  .form-group {
+    display: block;
+  }
+
+  .logo {
+    font-size: 68px;
   }
 
   .group {

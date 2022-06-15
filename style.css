@@ -141,39 +141,27 @@ footer p {
   padding: 20px;
 }
 
-/* 
-DONE - space apart logo and menu links in nav bar
-DONE - items in About horizontally aligned
-DONE - vertically center About paragraph
-DONE - ideas images in 2x2 grid
-DONE - Want to Host horizontally aligned
-  DONE - paragraph is vertically centered
-  DONE - paragraph and img share same width
-
- */
-
 /* -------  Media Queries ------- */
 
 /* For screens between 480-880px */
 @media all and (min-width: 480px) {
-  
   .item {
     align-self: center;
   }
-  
+
   .item-double {
     align-self: center;
     padding-left: 10px;
   }
-  
+
   .logo {
     font-size: 68px;
   }
-  
+
   header nav ul li {
     font-size: 16px;
   }
-  
+
   form button {
     width: 60%;
   }
@@ -185,7 +173,7 @@ DONE - Want to Host horizontally aligned
     display: flex;
     justify-content: space-between;
   }
-  
+
   .form-group {
     display: block;
   }
